@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.phonebook.tests.LoginTests" tests="1" skipped="0" failures="1" errors="0" timestamp="2024-06-25T13:40:07" hostname="DESKTOP-OS617JJ" time="20.905">
+  <properties/>
+  <testcase name="loginNegativeWithoutEmailTest" classname="com.phonebook.tests.LoginTests" time="20.905">
+    <failure message="org.openqa.selenium.TimeoutException: Expected condition failed: waiting for alert to be present (tried for 20 second(s) with 500 milliseconds interval)&#10;Build info: version: '4.21.0', revision: '79ed462ef4'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'&#10;Driver info: net.bytebuddy.renamed.java.lang.Object$ByteBuddy$DW1RvEMI&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\AITTRS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62781}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62781/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 78eff31e61860ea37b27e8d871e1b4fb" type="org.openqa.selenium.TimeoutException">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for alert to be present (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: net.bytebuddy.renamed.java.lang.Object$ByteBuddy$DW1RvEMI
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\AITTRS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62781}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62781/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 78eff31e61860ea37b27e8d871e1b4fb
+	at app//org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at app//org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at app//com.phonebook.fw.BaseHelper.isAlertPresent(BaseHelper.java:38)
+	at app//com.phonebook.tests.LoginTests.loginNegativeWithoutEmailTest(LoginTests.java:57)
+	at java.base@11.0.16/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.16/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.16/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.16/java.lang.reflect.Method.invoke(Method.java:566)
+	at app//org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at app//org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at app//org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at app//org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at app//org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at app//org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at app//org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at app//org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base@11.0.16/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at app//org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at app//org.testng.TestRunner.run(TestRunner.java:614)
+	at app//org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at app//org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at app//org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at app//org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at app//org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at app//org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at app//org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at app//org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at app//org.testng.TestNG.runSuites(TestNG.java:1112)
+	at app//org.testng.TestNG.run(TestNG.java:1079)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.runTests(TestNGTestClassProcessor.java:153)
+	at org.gradle.api.internal.tasks.testing.testng.TestNGTestClassProcessor.stop(TestNGTestClassProcessor.java:96)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.stop(SuiteTestClassProcessor.java:62)
+	at java.base@11.0.16/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base@11.0.16/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base@11.0.16/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base@11.0.16/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:36)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:33)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:94)
+	at com.sun.proxy.$Proxy2.stop(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker$3.run(TestWorker.java:193)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.executeAndMaintainThreadName(TestWorker.java:129)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:100)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.execute(TestWorker.java:60)
+	at org.gradle.process.internal.worker.child.ActionExecutionWorker.execute(ActionExecutionWorker.java:56)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:119)
+	at org.gradle.process.internal.worker.child.SystemApplicationClassLoaderWorker.call(SystemApplicationClassLoaderWorker.java:66)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
+	at app//worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
+</failure>
+  </testcase>
+  <system-out><![CDATA[Before class
+15:40:07.293 [Test worker] INFO  com.phonebook.tests.TestBase -- Start test!loginNegativeWithoutEmailTest with data: []
+15:40:07.301 [Test worker] INFO  com.phonebook.utils.MyListener -- Before find element --> By.cssSelector: [href='/login']
+15:40:07.363 [Test worker] INFO  com.phonebook.utils.MyListener -- After find element --> By.cssSelector: [href='/login']
+15:40:08.206 [Test worker] INFO  com.phonebook.utils.MyListener -- Something went wrong!!!
+15:40:08.207 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:08.208 [Test worker] INFO  com.phonebook.utils.MyListener -- Method -->alert
+15:40:08.208 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:08.208 [Test worker] INFO  com.phonebook.utils.MyListener -- Object Target -->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@1e1b061
+15:40:08.208 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:08.209 [Test worker] INFO  com.phonebook.utils.MyListener -- Target exception org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=126.0.6478.114)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [78eff31e61860ea37b27e8d871e1b4fb, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\AITTRS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62781}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62781/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 78eff31e61860ea37b27e8d871e1b4fb
+15:40:08.737 [Test worker] INFO  com.phonebook.utils.MyListener -- Something went wrong!!!
+15:40:08.738 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:08.738 [Test worker] INFO  com.phonebook.utils.MyListener -- Method -->alert
+15:40:08.739 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:08.739 [Test worker] INFO  com.phonebook.utils.MyListener -- Object Target -->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@60c73e58
+15:40:08.739 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:08.740 [Test worker] INFO  com.phonebook.utils.MyListener -- Target exception org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=126.0.6478.114)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [78eff31e61860ea37b27e8d871e1b4fb, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\AITTRS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62781}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62781/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 78eff31e61860ea37b27e8d871e1b4fb
+15:40:09.267 [Test worker] INFO  com.phonebook.utils.MyListener -- Something went wrong!!!
+15:40:09.268 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:09.268 [Test worker] INFO  com.phonebook.utils.MyListener -- Method -->alert
+15:40:09.268 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:09.269 [Test worker] INFO  com.phonebook.utils.MyListener -- Object Target -->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@4483d35
+15:40:09.269 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:09.270 [Test worker] INFO  com.phonebook.utils.MyListener -- Target exception org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=126.0.6478.114)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [78eff31e61860ea37b27e8d871e1b4fb, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\AITTRS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62781}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62781/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 78eff31e61860ea37b27e8d871e1b4fb
+15:40:09.803 [Test worker] INFO  com.phonebook.utils.MyListener -- Something went wrong!!!
+15:40:09.804 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:09.804 [Test worker] INFO  com.phonebook.utils.MyListener -- Method -->alert
+15:40:09.804 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:09.804 [Test worker] INFO  com.phonebook.utils.MyListener -- Object Target -->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@2f4ba1ae
+15:40:09.804 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:09.805 [Test worker] INFO  com.phonebook.utils.MyListener -- Target exception org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=126.0.6478.114)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [78eff31e61860ea37b27e8d871e1b4fb, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\AITTRS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62781}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62781/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 78eff31e61860ea37b27e8d871e1b4fb
+15:40:10.330 [Test worker] INFO  com.phonebook.utils.MyListener -- Something went wrong!!!
+15:40:10.331 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:10.333 [Test worker] INFO  com.phonebook.utils.MyListener -- Method -->alert
+15:40:10.334 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:10.334 [Test worker] INFO  com.phonebook.utils.MyListener -- Object Target -->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@1b6924cb
+15:40:10.335 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:10.335 [Test worker] INFO  com.phonebook.utils.MyListener -- Target exception org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=126.0.6478.114)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [78eff31e61860ea37b27e8d871e1b4fb, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\AITTRS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62781}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62781/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 78eff31e61860ea37b27e8d871e1b4fb
+15:40:10.865 [Test worker] INFO  com.phonebook.utils.MyListener -- Something went wrong!!!
+15:40:10.865 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:10.866 [Test worker] INFO  com.phonebook.utils.MyListener -- Method -->alert
+15:40:10.866 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:10.866 [Test worker] INFO  com.phonebook.utils.MyListener -- Object Target -->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@6ed043d3
+15:40:10.866 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:10.867 [Test worker] INFO  com.phonebook.utils.MyListener -- Target exception org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=126.0.6478.114)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [78eff31e61860ea37b27e8d871e1b4fb, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\AITTRS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62781}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62781/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 78eff31e61860ea37b27e8d871e1b4fb
+15:40:11.425 [Test worker] INFO  com.phonebook.utils.MyListener -- Something went wrong!!!
+15:40:11.425 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:11.426 [Test worker] INFO  com.phonebook.utils.MyListener -- Method -->alert
+15:40:11.426 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:11.426 [Test worker] INFO  com.phonebook.utils.MyListener -- Object Target -->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@3d19d85
+15:40:11.427 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:11.428 [Test worker] INFO  com.phonebook.utils.MyListener -- Target exception org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=126.0.6478.114)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [78eff31e61860ea37b27e8d871e1b4fb, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\AITTRS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62781}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62781/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 78eff31e61860ea37b27e8d871e1b4fb
+15:40:11.974 [Test worker] INFO  com.phonebook.utils.MyListener -- Something went wrong!!!
+15:40:11.974 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:11.975 [Test worker] INFO  com.phonebook.utils.MyListener -- Method -->alert
+15:40:11.975 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:11.975 [Test worker] INFO  com.phonebook.utils.MyListener -- Object Target -->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@42aae04d
+15:40:11.976 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:11.976 [Test worker] INFO  com.phonebook.utils.MyListener -- Target exception org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=126.0.6478.114)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [78eff31e61860ea37b27e8d871e1b4fb, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\AITTRS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62781}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62781/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 78eff31e61860ea37b27e8d871e1b4fb
+15:40:12.499 [Test worker] INFO  com.phonebook.utils.MyListener -- Something went wrong!!!
+15:40:12.500 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:12.501 [Test worker] INFO  com.phonebook.utils.MyListener -- Method -->alert
+15:40:12.502 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:12.502 [Test worker] INFO  com.phonebook.utils.MyListener -- Object Target -->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@7426a448
+15:40:12.503 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:12.504 [Test worker] INFO  com.phonebook.utils.MyListener -- Target exception org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=126.0.6478.114)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [78eff31e61860ea37b27e8d871e1b4fb, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\AITTRS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62781}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62781/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 78eff31e61860ea37b27e8d871e1b4fb
+15:40:13.118 [Test worker] INFO  com.phonebook.utils.MyListener -- Something went wrong!!!
+15:40:13.118 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:13.119 [Test worker] INFO  com.phonebook.utils.MyListener -- Method -->alert
+15:40:13.119 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:13.119 [Test worker] INFO  com.phonebook.utils.MyListener -- Object Target -->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@1e3e1014
+15:40:13.119 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:13.120 [Test worker] INFO  com.phonebook.utils.MyListener -- Target exception org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=126.0.6478.114)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [78eff31e61860ea37b27e8d871e1b4fb, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\AITTRS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62781}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62781/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 78eff31e61860ea37b27e8d871e1b4fb
+15:40:13.659 [Test worker] INFO  com.phonebook.utils.MyListener -- Something went wrong!!!
+15:40:13.659 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:13.659 [Test worker] INFO  com.phonebook.utils.MyListener -- Method -->alert
+15:40:13.659 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:13.659 [Test worker] INFO  com.phonebook.utils.MyListener -- Object Target -->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@4ee25d80
+15:40:13.659 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:13.661 [Test worker] INFO  com.phonebook.utils.MyListener -- Target exception org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=126.0.6478.114)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [78eff31e61860ea37b27e8d871e1b4fb, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\AITTRS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62781}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62781/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 78eff31e61860ea37b27e8d871e1b4fb
+15:40:14.182 [Test worker] INFO  com.phonebook.utils.MyListener -- Something went wrong!!!
+15:40:14.183 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:14.183 [Test worker] INFO  com.phonebook.utils.MyListener -- Method -->alert
+15:40:14.183 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:14.183 [Test worker] INFO  com.phonebook.utils.MyListener -- Object Target -->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@633cc6b5
+15:40:14.183 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:14.184 [Test worker] INFO  com.phonebook.utils.MyListener -- Target exception org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=126.0.6478.114)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [78eff31e61860ea37b27e8d871e1b4fb, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\AITTRS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62781}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62781/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 78eff31e61860ea37b27e8d871e1b4fb
+15:40:14.709 [Test worker] INFO  com.phonebook.utils.MyListener -- Something went wrong!!!
+15:40:14.711 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:14.711 [Test worker] INFO  com.phonebook.utils.MyListener -- Method -->alert
+15:40:14.711 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:14.711 [Test worker] INFO  com.phonebook.utils.MyListener -- Object Target -->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@f1f7db2
+15:40:14.711 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:14.711 [Test worker] INFO  com.phonebook.utils.MyListener -- Target exception org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=126.0.6478.114)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [78eff31e61860ea37b27e8d871e1b4fb, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\AITTRS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62781}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62781/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 78eff31e61860ea37b27e8d871e1b4fb
+15:40:15.233 [Test worker] INFO  com.phonebook.utils.MyListener -- Something went wrong!!!
+15:40:15.234 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:15.234 [Test worker] INFO  com.phonebook.utils.MyListener -- Method -->alert
+15:40:15.235 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:15.235 [Test worker] INFO  com.phonebook.utils.MyListener -- Object Target -->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@2513a118
+15:40:15.235 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:15.236 [Test worker] INFO  com.phonebook.utils.MyListener -- Target exception org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=126.0.6478.114)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [78eff31e61860ea37b27e8d871e1b4fb, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\AITTRS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62781}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62781/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 78eff31e61860ea37b27e8d871e1b4fb
+15:40:15.758 [Test worker] INFO  com.phonebook.utils.MyListener -- Something went wrong!!!
+15:40:15.760 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:15.762 [Test worker] INFO  com.phonebook.utils.MyListener -- Method -->alert
+15:40:15.763 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:15.766 [Test worker] INFO  com.phonebook.utils.MyListener -- Object Target -->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@42a0501e
+15:40:15.768 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:15.771 [Test worker] INFO  com.phonebook.utils.MyListener -- Target exception org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=126.0.6478.114)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [78eff31e61860ea37b27e8d871e1b4fb, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\AITTRS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62781}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62781/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 78eff31e61860ea37b27e8d871e1b4fb
+15:40:16.321 [Test worker] INFO  com.phonebook.utils.MyListener -- Something went wrong!!!
+15:40:16.322 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:16.322 [Test worker] INFO  com.phonebook.utils.MyListener -- Method -->alert
+15:40:16.322 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:16.323 [Test worker] INFO  com.phonebook.utils.MyListener -- Object Target -->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@6abdec0e
+15:40:16.323 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:16.324 [Test worker] INFO  com.phonebook.utils.MyListener -- Target exception org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=126.0.6478.114)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [78eff31e61860ea37b27e8d871e1b4fb, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\AITTRS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62781}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62781/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 78eff31e61860ea37b27e8d871e1b4fb
+15:40:16.859 [Test worker] INFO  com.phonebook.utils.MyListener -- Something went wrong!!!
+15:40:16.861 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:16.861 [Test worker] INFO  com.phonebook.utils.MyListener -- Method -->alert
+15:40:16.861 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:16.862 [Test worker] INFO  com.phonebook.utils.MyListener -- Object Target -->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@66933239
+15:40:16.863 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:16.863 [Test worker] INFO  com.phonebook.utils.MyListener -- Target exception org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=126.0.6478.114)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [78eff31e61860ea37b27e8d871e1b4fb, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\AITTRS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62781}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62781/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 78eff31e61860ea37b27e8d871e1b4fb
+15:40:17.387 [Test worker] INFO  com.phonebook.utils.MyListener -- Something went wrong!!!
+15:40:17.388 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:17.388 [Test worker] INFO  com.phonebook.utils.MyListener -- Method -->alert
+15:40:17.389 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:17.389 [Test worker] INFO  com.phonebook.utils.MyListener -- Object Target -->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@4f327096
+15:40:17.389 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:17.390 [Test worker] INFO  com.phonebook.utils.MyListener -- Target exception org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=126.0.6478.114)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [78eff31e61860ea37b27e8d871e1b4fb, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\AITTRS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62781}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62781/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 78eff31e61860ea37b27e8d871e1b4fb
+15:40:17.928 [Test worker] INFO  com.phonebook.utils.MyListener -- Something went wrong!!!
+15:40:17.929 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:17.931 [Test worker] INFO  com.phonebook.utils.MyListener -- Method -->alert
+15:40:17.933 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:17.934 [Test worker] INFO  com.phonebook.utils.MyListener -- Object Target -->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@41a374be
+15:40:17.935 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:17.936 [Test worker] INFO  com.phonebook.utils.MyListener -- Target exception org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=126.0.6478.114)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [78eff31e61860ea37b27e8d871e1b4fb, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\AITTRS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62781}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62781/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 78eff31e61860ea37b27e8d871e1b4fb
+15:40:18.474 [Test worker] INFO  com.phonebook.utils.MyListener -- Something went wrong!!!
+15:40:18.477 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:18.479 [Test worker] INFO  com.phonebook.utils.MyListener -- Method -->alert
+15:40:18.482 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:18.482 [Test worker] INFO  com.phonebook.utils.MyListener -- Object Target -->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@1fc713c9
+15:40:18.483 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:18.483 [Test worker] INFO  com.phonebook.utils.MyListener -- Target exception org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=126.0.6478.114)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [78eff31e61860ea37b27e8d871e1b4fb, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\AITTRS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62781}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62781/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 78eff31e61860ea37b27e8d871e1b4fb
+15:40:19.032 [Test worker] INFO  com.phonebook.utils.MyListener -- Something went wrong!!!
+15:40:19.033 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:19.040 [Test worker] INFO  com.phonebook.utils.MyListener -- Method -->alert
+15:40:19.040 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:19.043 [Test worker] INFO  com.phonebook.utils.MyListener -- Object Target -->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@161aa04a
+15:40:19.044 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:19.046 [Test worker] INFO  com.phonebook.utils.MyListener -- Target exception org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=126.0.6478.114)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [78eff31e61860ea37b27e8d871e1b4fb, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\AITTRS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62781}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62781/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 78eff31e61860ea37b27e8d871e1b4fb
+15:40:19.597 [Test worker] INFO  com.phonebook.utils.MyListener -- Something went wrong!!!
+15:40:19.598 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:19.599 [Test worker] INFO  com.phonebook.utils.MyListener -- Method -->alert
+15:40:19.600 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:19.601 [Test worker] INFO  com.phonebook.utils.MyListener -- Object Target -->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@4a901445
+15:40:19.602 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:19.604 [Test worker] INFO  com.phonebook.utils.MyListener -- Target exception org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=126.0.6478.114)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [78eff31e61860ea37b27e8d871e1b4fb, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\AITTRS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62781}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62781/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 78eff31e61860ea37b27e8d871e1b4fb
+15:40:20.166 [Test worker] INFO  com.phonebook.utils.MyListener -- Something went wrong!!!
+15:40:20.168 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:20.168 [Test worker] INFO  com.phonebook.utils.MyListener -- Method -->alert
+15:40:20.168 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:20.169 [Test worker] INFO  com.phonebook.utils.MyListener -- Object Target -->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@6dc9da2d
+15:40:20.170 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:20.171 [Test worker] INFO  com.phonebook.utils.MyListener -- Target exception org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=126.0.6478.114)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [78eff31e61860ea37b27e8d871e1b4fb, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\AITTRS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62781}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62781/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 78eff31e61860ea37b27e8d871e1b4fb
+15:40:20.695 [Test worker] INFO  com.phonebook.utils.MyListener -- Something went wrong!!!
+15:40:20.696 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:20.696 [Test worker] INFO  com.phonebook.utils.MyListener -- Method -->alert
+15:40:20.696 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:20.696 [Test worker] INFO  com.phonebook.utils.MyListener -- Object Target -->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@2ddb3ae8
+15:40:20.697 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:20.697 [Test worker] INFO  com.phonebook.utils.MyListener -- Target exception org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=126.0.6478.114)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [78eff31e61860ea37b27e8d871e1b4fb, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\AITTRS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62781}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62781/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 78eff31e61860ea37b27e8d871e1b4fb
+15:40:21.245 [Test worker] INFO  com.phonebook.utils.MyListener -- Something went wrong!!!
+15:40:21.246 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:21.248 [Test worker] INFO  com.phonebook.utils.MyListener -- Method -->alert
+15:40:21.249 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:21.250 [Test worker] INFO  com.phonebook.utils.MyListener -- Object Target -->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@6fbc1bb
+15:40:21.250 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:21.259 [Test worker] INFO  com.phonebook.utils.MyListener -- Target exception org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=126.0.6478.114)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [78eff31e61860ea37b27e8d871e1b4fb, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\AITTRS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62781}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62781/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 78eff31e61860ea37b27e8d871e1b4fb
+15:40:21.809 [Test worker] INFO  com.phonebook.utils.MyListener -- Something went wrong!!!
+15:40:21.810 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:21.811 [Test worker] INFO  com.phonebook.utils.MyListener -- Method -->alert
+15:40:21.811 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:21.811 [Test worker] INFO  com.phonebook.utils.MyListener -- Object Target -->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@48df4071
+15:40:21.812 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:21.813 [Test worker] INFO  com.phonebook.utils.MyListener -- Target exception org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=126.0.6478.114)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [78eff31e61860ea37b27e8d871e1b4fb, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\AITTRS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62781}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62781/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 78eff31e61860ea37b27e8d871e1b4fb
+15:40:22.355 [Test worker] INFO  com.phonebook.utils.MyListener -- Something went wrong!!!
+15:40:22.356 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:22.356 [Test worker] INFO  com.phonebook.utils.MyListener -- Method -->alert
+15:40:22.357 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:22.357 [Test worker] INFO  com.phonebook.utils.MyListener -- Object Target -->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@692dba54
+15:40:22.357 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:22.358 [Test worker] INFO  com.phonebook.utils.MyListener -- Target exception org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=126.0.6478.114)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [78eff31e61860ea37b27e8d871e1b4fb, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\AITTRS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62781}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62781/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 78eff31e61860ea37b27e8d871e1b4fb
+15:40:22.899 [Test worker] INFO  com.phonebook.utils.MyListener -- Something went wrong!!!
+15:40:22.900 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:22.900 [Test worker] INFO  com.phonebook.utils.MyListener -- Method -->alert
+15:40:22.900 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:22.901 [Test worker] INFO  com.phonebook.utils.MyListener -- Object Target -->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@48eb001a
+15:40:22.901 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:22.902 [Test worker] INFO  com.phonebook.utils.MyListener -- Target exception org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=126.0.6478.114)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [78eff31e61860ea37b27e8d871e1b4fb, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\AITTRS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62781}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62781/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 78eff31e61860ea37b27e8d871e1b4fb
+15:40:23.457 [Test worker] INFO  com.phonebook.utils.MyListener -- Something went wrong!!!
+15:40:23.458 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:23.459 [Test worker] INFO  com.phonebook.utils.MyListener -- Method -->alert
+15:40:23.460 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:23.462 [Test worker] INFO  com.phonebook.utils.MyListener -- Object Target -->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@52b3bf03
+15:40:23.463 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:23.464 [Test worker] INFO  com.phonebook.utils.MyListener -- Target exception org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=126.0.6478.114)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [78eff31e61860ea37b27e8d871e1b4fb, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\AITTRS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62781}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62781/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 78eff31e61860ea37b27e8d871e1b4fb
+15:40:24.013 [Test worker] INFO  com.phonebook.utils.MyListener -- Something went wrong!!!
+15:40:24.013 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:24.013 [Test worker] INFO  com.phonebook.utils.MyListener -- Method -->alert
+15:40:24.014 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:24.014 [Test worker] INFO  com.phonebook.utils.MyListener -- Object Target -->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@5626d18c
+15:40:24.015 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:24.015 [Test worker] INFO  com.phonebook.utils.MyListener -- Target exception org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=126.0.6478.114)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [78eff31e61860ea37b27e8d871e1b4fb, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\AITTRS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62781}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62781/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 78eff31e61860ea37b27e8d871e1b4fb
+15:40:24.562 [Test worker] INFO  com.phonebook.utils.MyListener -- Something went wrong!!!
+15:40:24.564 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:24.565 [Test worker] INFO  com.phonebook.utils.MyListener -- Method -->alert
+15:40:24.566 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:24.570 [Test worker] INFO  com.phonebook.utils.MyListener -- Object Target -->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@45f756e6
+15:40:24.571 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:24.574 [Test worker] INFO  com.phonebook.utils.MyListener -- Target exception org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=126.0.6478.114)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [78eff31e61860ea37b27e8d871e1b4fb, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\AITTRS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62781}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62781/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 78eff31e61860ea37b27e8d871e1b4fb
+15:40:25.094 [Test worker] INFO  com.phonebook.utils.MyListener -- Something went wrong!!!
+15:40:25.094 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:25.094 [Test worker] INFO  com.phonebook.utils.MyListener -- Method -->alert
+15:40:25.094 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:25.094 [Test worker] INFO  com.phonebook.utils.MyListener -- Object Target -->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@656f62dc
+15:40:25.095 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:25.095 [Test worker] INFO  com.phonebook.utils.MyListener -- Target exception org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=126.0.6478.114)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [78eff31e61860ea37b27e8d871e1b4fb, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\AITTRS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62781}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62781/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 78eff31e61860ea37b27e8d871e1b4fb
+15:40:25.650 [Test worker] INFO  com.phonebook.utils.MyListener -- Something went wrong!!!
+15:40:25.651 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:25.651 [Test worker] INFO  com.phonebook.utils.MyListener -- Method -->alert
+15:40:25.651 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:25.652 [Test worker] INFO  com.phonebook.utils.MyListener -- Object Target -->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@5a8c93
+15:40:25.653 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:25.653 [Test worker] INFO  com.phonebook.utils.MyListener -- Target exception org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=126.0.6478.114)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [78eff31e61860ea37b27e8d871e1b4fb, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\AITTRS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62781}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62781/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 78eff31e61860ea37b27e8d871e1b4fb
+15:40:26.181 [Test worker] INFO  com.phonebook.utils.MyListener -- Something went wrong!!!
+15:40:26.181 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:26.182 [Test worker] INFO  com.phonebook.utils.MyListener -- Method -->alert
+15:40:26.182 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:26.182 [Test worker] INFO  com.phonebook.utils.MyListener -- Object Target -->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@1c7350b0
+15:40:26.182 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:26.182 [Test worker] INFO  com.phonebook.utils.MyListener -- Target exception org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=126.0.6478.114)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [78eff31e61860ea37b27e8d871e1b4fb, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\AITTRS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62781}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62781/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 78eff31e61860ea37b27e8d871e1b4fb
+15:40:26.697 [Test worker] INFO  com.phonebook.utils.MyListener -- Something went wrong!!!
+15:40:26.697 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:26.697 [Test worker] INFO  com.phonebook.utils.MyListener -- Method -->alert
+15:40:26.697 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:26.697 [Test worker] INFO  com.phonebook.utils.MyListener -- Object Target -->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@2b0dc227
+15:40:26.697 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:26.698 [Test worker] INFO  com.phonebook.utils.MyListener -- Target exception org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=126.0.6478.114)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [78eff31e61860ea37b27e8d871e1b4fb, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\AITTRS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62781}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62781/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 78eff31e61860ea37b27e8d871e1b4fb
+15:40:27.216 [Test worker] INFO  com.phonebook.utils.MyListener -- Something went wrong!!!
+15:40:27.216 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:27.216 [Test worker] INFO  com.phonebook.utils.MyListener -- Method -->alert
+15:40:27.216 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:27.216 [Test worker] INFO  com.phonebook.utils.MyListener -- Object Target -->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@2a334bac
+15:40:27.216 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:27.217 [Test worker] INFO  com.phonebook.utils.MyListener -- Target exception org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=126.0.6478.114)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [78eff31e61860ea37b27e8d871e1b4fb, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\AITTRS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62781}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62781/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 78eff31e61860ea37b27e8d871e1b4fb
+15:40:27.746 [Test worker] INFO  com.phonebook.utils.MyListener -- Something went wrong!!!
+15:40:27.747 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:27.747 [Test worker] INFO  com.phonebook.utils.MyListener -- Method -->alert
+15:40:27.747 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:27.747 [Test worker] INFO  com.phonebook.utils.MyListener -- Object Target -->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@3c854752
+15:40:27.747 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:27.748 [Test worker] INFO  com.phonebook.utils.MyListener -- Target exception org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=126.0.6478.114)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [78eff31e61860ea37b27e8d871e1b4fb, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\AITTRS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62781}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62781/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 78eff31e61860ea37b27e8d871e1b4fb
+15:40:28.266 [Test worker] INFO  com.phonebook.utils.MyListener -- Something went wrong!!!
+15:40:28.267 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:28.267 [Test worker] INFO  com.phonebook.utils.MyListener -- Method -->alert
+15:40:28.267 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:28.267 [Test worker] INFO  com.phonebook.utils.MyListener -- Object Target -->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@210d2a6c
+15:40:28.267 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:28.267 [Test worker] INFO  com.phonebook.utils.MyListener -- Target exception org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=126.0.6478.114)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [78eff31e61860ea37b27e8d871e1b4fb, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\AITTRS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62781}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62781/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 78eff31e61860ea37b27e8d871e1b4fb
+15:40:28.714 [Test worker] INFO  com.phonebook.tests.TestBase -- FAILEDloginNegativeWithoutEmailTestScreenshot: C:\QA\QA41_Phonebook\screenshots\screen-1719322828675.png
+15:40:28.715 [Test worker] INFO  com.phonebook.tests.TestBase -- Stop test!
+15:40:28.715 [Test worker] INFO  com.phonebook.tests.TestBase -- =================================================================================
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.phonebook.tests.CreateAccountTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-06-25T13:40:04" hostname="DESKTOP-OS617JJ" time="2.616">
+  <properties/>
+  <testcase name="createExistedAccountNegativeTest" classname="com.phonebook.tests.CreateAccountTests" time="2.616"/>
+  <system-out><![CDATA[15:40:04.574 [Test worker] INFO  com.phonebook.tests.TestBase -- Start test!createExistedAccountNegativeTest with data: []
+15:40:04.584 [Test worker] INFO  com.phonebook.utils.MyListener -- Before find element --> By.cssSelector: [href='/login']
+15:40:04.640 [Test worker] INFO  com.phonebook.utils.MyListener -- After find element --> By.cssSelector: [href='/login']
+15:40:06.557 [Test worker] INFO  com.phonebook.utils.MyListener -- Something went wrong!!!
+15:40:06.558 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:06.561 [Test worker] INFO  com.phonebook.utils.MyListener -- Method -->alert
+15:40:06.561 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:06.562 [Test worker] INFO  com.phonebook.utils.MyListener -- Object Target -->org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator@6296474f
+15:40:06.563 [Test worker] INFO  com.phonebook.utils.MyListener -- ****************************************************************************
+15:40:06.566 [Test worker] INFO  com.phonebook.utils.MyListener -- Target exception org.openqa.selenium.NoAlertPresentException: no such alert
+  (Session info: chrome=126.0.6478.114)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [78eff31e61860ea37b27e8d871e1b4fb, getAlertText {}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\AITTRS~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62781}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62781/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 78eff31e61860ea37b27e8d871e1b4fb
+15:40:07.160 [Test worker] INFO  com.phonebook.utils.MyListener -- Before find element --> By.xpath: //div[.='Registration failed with code 409']
+15:40:07.253 [Test worker] INFO  com.phonebook.utils.MyListener -- After find element --> By.xpath: //div[.='Registration failed with code 409']
+15:40:07.274 [Test worker] INFO  com.phonebook.tests.TestBase -- PASSEDcreateExistedAccountNegativeTest
+15:40:07.275 [Test worker] INFO  com.phonebook.tests.TestBase -- Stop test!
+15:40:07.276 [Test worker] INFO  com.phonebook.tests.TestBase -- =================================================================================
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

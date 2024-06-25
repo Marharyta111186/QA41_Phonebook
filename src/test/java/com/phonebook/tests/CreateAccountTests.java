@@ -1,18 +1,28 @@
 package com.phonebook.tests;
 
+import com.phonebook.data.UserData;
+import com.phonebook.models.User;
 import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 public class CreateAccountTests extends TestBase{
 
-    @Test(enabled = false)
+    @BeforeMethod
+    public void ensurePrecondition(){
+        if(!app.getUser().isLoginLinkPresent()){
+            app.getUser().clickOnSignOutButton();
+        }
+    }
+
+    @Test
     public void createAccountPositiveTest() {
 
         app.getUser().clickOnLoginLink();
         app.getUser().fillRegisterLoginForm(new User()
-                .setEmail("manuel@gm.com")
-                .setPassword("Manuel1234$"));
+                .setEmail(UserData.EMAIL)
+                .setPassword(UserData.PASSWORD));
         app.getUser().clickOnRegistrationButton();
 
         Assert.assertTrue(app.getUser().isSignOutButtonPresent());
@@ -24,13 +34,15 @@ public class CreateAccountTests extends TestBase{
 
         app.getUser().clickOnLoginLink();
         app.getUser().fillRegisterLoginForm(new User()
-                .setEmail("manuel@gm.com")
-                .setPassword("Manuel1234$"));
+                .setEmail(UserData.EMAIL)
+                .setPassword(UserData.PASSWORD));
         app.getUser().clickOnRegistrationButton();
 
         softAssert.assertTrue(app.getUser().isAlertPresent());
         softAssert.assertTrue(app.getUser().isError409Present());
         softAssert.assertAll();
+
+
     }
 
 }
